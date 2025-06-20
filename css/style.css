@@ -7,7 +7,7 @@
   
 }
 :root{
-  --green:yellowgreen;
+  --green:#1aaca2;
   --bg-color:#1c1c1c;
   --white:#fff;
   --sanserif: sans-serif;
@@ -19,7 +19,7 @@ html{
 body{
   background:#1c1c1c;
   padding-inline: 2rem;
-  padding-top:0.5rem ;
+  padding-top:1rem ;
 }
 /* Header style */
    header{
@@ -39,6 +39,7 @@ body{
       /* position: fixed; */
            backdrop-filter: blur(10px); /* main blur */
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent bg */
+
     }
     .logo-brand h1{
       color: var(--white);
@@ -61,7 +62,7 @@ body{
       color: var(--white);
     }
      header nav ul li >a:hover{
-      color: rgb(182, 240, 65);
+      color: var(--green);
       transition: 0.3s;
   
     }
@@ -151,8 +152,8 @@ margin-top: 0.5rem;
   border: 2px solid var(--green);
   color: var(--white);
   font-weight: bold;
-  padding: 0.4rem 1rem;
-  border-radius: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
   cursor: pointer;
   background-color: #000;
   display: block;
@@ -177,7 +178,7 @@ flex-grow: 1;
 }
 .navlink2 nav ul li>a{
 background-color: var(--white);
-padding: 0.3rem 1rem;
+padding: 0.6rem 1rem;
 color: #000;
    font-weight: 600;
    font-family: var(--sanserif);
@@ -216,7 +217,7 @@ gap: 1rem;
 
 
 }
-.card-section .card img{
+.card-section .card  img{
   width: 100%;
   height: 150px;
   border-radius: 0.3rem;
@@ -252,6 +253,9 @@ gap: 1rem;
 }
 
 /* footer */
+
+.img-container img{max-width: 200px;
+}
 .footer-section{
   background-color: #000;
 padding: 1rem 2rem;
@@ -430,12 +434,14 @@ height: 35px;
   }
   header{
 border-radius: 0.5rem;
-padding-inline: 1rem;
+padding-inline: 0.4rem;
   }
   body{
+   
     padding-inline: 1rem;
-    padding-top: 0.2rem;
+ 
   }
+  
      header nav ul{
       position: absolute;
       margin-top: 1.2rem;
@@ -472,18 +478,16 @@ margin-bottom: 1.5rem;
 }
 
 .navlink1 nav ul li a {
-padding: 0.4rem 0.8rem;
+
   font-size: 0.8rem;
   font-weight: 500;
 }
-.navlink2 nav ul li:first-child a , .navlink2 nav ul li:last-child a{
-  border-top-right-radius: 0rem;
-  border-bottom-right-radius: 0rem;
-    border-top-left-radius: 0rem;
-  border-bottom-left-radius: 0rem;
-}
+
 .about , .quick-links , .social-links{
   gap: 0.5rem;
+}
+.remove-mobile-screen{
+  display: none;
 }
 
 }
