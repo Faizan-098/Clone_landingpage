@@ -24,10 +24,10 @@ padding-top: 0.7rem;
 /* Header style */
    header{
 
-      max-width: 1350px;
+ 
       
       min-height: 5rem;
-      width: 100%;
+      width: 98%;
       border-radius: 1rem;
       border: 2px solid var(--green);
       margin: auto;
@@ -131,7 +131,7 @@ height: 20px;
 }
    /* main */
 main{
-  padding-inline: 1.5rem;
+  padding-inline: 1rem;
 }
    .main-heading{
  
@@ -557,7 +557,7 @@ width: 95%;
      }
    .main-heading{
     margin-top: 4rem;
-    max-width: 350px;
+
 
    }
    .main-heading .explore{
