@@ -521,6 +521,12 @@ font-weight: 600;
  cursor: pointer;
 }
 /* Media query */
+@media (max-width:800px){
+.contact-btn button{
+  
+  display: none;
+}
+}
 @media (max-width:600px) {
   .social-links .links a{
     font-size: 1.2rem;
