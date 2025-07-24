@@ -14,13 +14,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- mobile -->
+       <div class="side-bar-container">
+         <div class="side-bar">
+           <div class="side-logo">
+          <img src="./images/smash-logo.png" width="85px" alt="logo" />
+        </div>
+          <ul class="side-links">
+            <li class="list"><a href="#">H<span>OM</span>E</a></li>
+            <li class="list"><a href="#">PR<span>OJE</span>CTS</a></li>
+            <li class="list"><a href="#">SE<span>RVIC</span>ES</a></li>
+            <li class="list"><a href="#">B<span>LO</span>G</a></li>
+            <li class="list"><a href="#">CO<span>NTA</span>CT</a></li>
+          </ul>
+        </div>
+       </div>
     <!-- Header Start -->
     <section class="header">
       <header>
         <div class="logo-brand">
           <img src="./images/smash-logo.png" width="100px" alt="logo" />
         </div>
-        <nav>
           <ul>
             <li><a href="#">H<span>OM</span>E</a></li>
             <li><a href="#">PR<span>OJE</span>CTS</a></li>
@@ -28,10 +42,9 @@
             <li><a href="#">B<span>LO</span>G</a></li>
             <li><a href="#">CO<span>NTA</span>CT</a></li>
           </ul>
-        </nav>
         <div class="contact-btn">
           <button>Get quote</button>
-          <div class="toggle-icon">
+          <div class="toggle-icon ">
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
@@ -314,5 +327,24 @@ This website is developed in HTML, CSS, and JavaScript. The design of the landin
      <div class="whatsapp">
    <i class="fa-brands fa-whatsapp"></i>
      </div>
+
+     <script>
+     let sidebar=document.querySelector('.side-bar');
+     let sidebarContainer=document.querySelector('.side-bar-container');
+     let toggleIcon=document.querySelector('.toggle-icon');
+toggleIcon.addEventListener('click',()=>{
+  sidebar.classList.toggle('show')
+
+})
+document.body.addEventListener('click',(event)=>{
+if(event.target.className=='side-logo' || event.target.className=='side-bar' || event.target.className=='fa-solid fa-bars'){
+return false;
+}else{
+    sidebar.classList.remove('show')
+}
+  
+  
+})
+     </script>
   </body>
 </html>
