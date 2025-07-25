@@ -337,7 +337,7 @@ toggleIcon.addEventListener('click',()=>{
 
 })
 document.body.addEventListener('click',(event)=>{
-if(event.target.className=='side-logo' || event.target.className=='side-bar' || event.target.className=='fa-solid fa-bars'){
+if( event.target.className=='fa-solid fa-bars'){
 return false;
 }else{
     sidebar.classList.remove('show')
