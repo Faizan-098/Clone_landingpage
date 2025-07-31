@@ -331,24 +331,6 @@ This website is developed in HTML, CSS, and JavaScript. The design of the landin
    <i class="fa-brands fa-whatsapp"></i>
      </div>
 
-     <script>
-     let sidebar=document.querySelector('.side-bar');
-     let extraScreen=document.querySelector('.extra-screen');
-     let sideContainer=document.querySelector('.side-bar-container');
-     let toggleIcon=document.querySelector('.toggle-icon');
-// click on toggle icon
-
-toggleIcon.addEventListener('click',()=>{
-  sideContainer.classList.add('show')
-})
-
-sideContainer.addEventListener('click',(e)=>{
- if(e.target.className==='extra-screen'){
-   sideContainer.classList.remove('show');
-  }else if(e.target.className==='list'){
-  sideContainer.classList.remove('show');
-}
-})
-     </script>
+  <script src="./js/script.js"></script>
   </body>
 </html>
