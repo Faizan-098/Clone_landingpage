@@ -21,12 +21,15 @@
           <img src="./images/smash-logo.png" width="85px" alt="logo" />
         </div>
           <ul class="side-links">
-            <li class="list"><a href="#">H<span>OM</span>E</a></li>
-            <li class="list"><a href="#">PR<span>OJE</span>CTS</a></li>
-            <li class="list"><a href="#">SE<span>RVIC</span>ES</a></li>
-            <li class="list"><a href="#">B<span>LO</span>G</a></li>
-            <li class="list"><a href="#">CO<span>NTA</span>CT</a></li>
+            <li ><a href="#" class="list">H<span>OM</span>E</a></li>
+            <li ><a href="#" class="list">PR<span>OJE</span>CTS</a></li>
+            <li ><a href="#" class="list">SE<span>RVIC</span>ES</a></li>
+            <li ><a href="#" class="list">B<span>LO</span>G</a></li>
+            <li ><a href="#" class="list">CO<span>NTA</span>CT</a></li>
           </ul>
+        </div>
+        <div class="extra-screen">
+
         </div>
        </div>
     <!-- Header Start -->
@@ -330,20 +333,21 @@ This website is developed in HTML, CSS, and JavaScript. The design of the landin
 
      <script>
      let sidebar=document.querySelector('.side-bar');
-     let sidebarContainer=document.querySelector('.side-bar-container');
+     let extraScreen=document.querySelector('.extra-screen');
+     let sideContainer=document.querySelector('.side-bar-container');
      let toggleIcon=document.querySelector('.toggle-icon');
-toggleIcon.addEventListener('click',()=>{
-  sidebar.classList.toggle('show')
+// click on toggle icon
 
+toggleIcon.addEventListener('click',()=>{
+  sideContainer.classList.add('show')
 })
-document.body.addEventListener('click',(event)=>{
-if( event.target.className=='fa-solid fa-bars'){
-return false;
-}else{
-    sidebar.classList.remove('show')
+
+sideContainer.addEventListener('click',(e)=>{
+ if(e.target.className==='extra-screen'){
+   sideContainer.classList.remove('show');
+  }else if(e.target.className==='list'){
+  sideContainer.classList.remove('show');
 }
-  
-  
 })
      </script>
   </body>
